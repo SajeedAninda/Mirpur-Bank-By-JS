@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(37deg, rgba(146, 229, 217, 1) 0%, rgba(255, 233, 250, 1) 0%, rgba(114, 135, 246, 1) 100%);
+            background-repeat: no-repeat;
+        }
+
+        .bg2 {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(37deg, rgba(146, 229, 217, 1) 0%, rgba(233, 237, 255, 1) 0%, rgba(180, 188, 212, 1) 100%);
+            background-repeat: no-repeat;
+        }
+
+        .bg3 {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(262deg, rgba(146, 229, 217, 1) 0%, rgba(2, 17, 83, 1) 0%, rgba(163, 185, 251, 1) 100%);
+        }
+
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .txt-gradient {
+            background: Linear-gradient(37deg, rgba(146, 229, 217, 1) 0%, rgba(2, 17, 83, 1) 0%, rgba(163, 185, 251, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .txt-gradient-2 {
+            font-size: 72px;
+            background: linear-gradient(262deg, rgba(146, 229, 217, 1) 10%, rgba(2, 17, 83, 1) 0%, rgba(163, 185, 251, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="bg font-oswald">
+    <div class="flex justify-center items-center">
+        <div class="w-9/12 mx-auto bg2 rounded-2xl mt-10 py-10">
+            <h1 class="text-center text-3xl lg:text-6xl font-bold text-white">Welcome to <span
+                    class="txt-gradient text-4xl lg:text-7xl">Mirpur
+                    Bank!</span></h1>
+            <h2 class="text-center text-4xl font-bold text-white mt-4">Login</h2>
+            <div class="flex flex-col md:flex-row justify-evenly items-center">
+                <div class="flex-1 pl-10 w-full">
+                    <span class="block text- text-2xl font-bold txt-gradient mb-2">Email Address: </span>
+                    <input class="w-[80%] px-2 py-3 rounded-lg mb-4" type="email"
+                        placeholder="Input Your Bank Login Info">
+                    <span class="block text- text-2xl font-bold txt-gradient mb-2">Password: </span>
+                    <input class="w-[80%] px-2 py-3 rounded-lg" type="password" placeholder="Input Login Password">
+                    <button class="block mt-4 bg3 px-8 py-2 rounded-lg text-xl font-bold text-white">Login</button>
+                    <p class="mt-3 text-sm txt-gradient">Email: sajeedaninda@gmail.com</p>
+                    <p class="text-sm txt-gradient">Password: aNiNda12345</p>
+                </div>
+                <div class="flex-1">
+                    <img class="w-[80%] pl-20" src="bank.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
