@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(300deg, rgba(146, 229, 217, 1) 0%, rgba(255, 233, 250, 1) 0%, rgba(114, 135, 246, 1) 100%);
+            background-repeat: no-repeat;
+        }
+
+        .bg2 {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(37deg, rgba(146, 229, 217, 1) 0%, rgba(233, 237, 255, 1) 0%, rgba(180, 188, 212, 1) 100%);
+            background-repeat: no-repeat;
+        }
+
+        .bg3 {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(262deg, rgba(146, 229, 217, 1) 0%, rgba(2, 17, 83, 1) 0%, rgba(163, 185, 251, 1) 100%);
+        }
+
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .txt-gradient {
+            background: Linear-gradient(37deg, rgba(146, 229, 217, 1) 0%, rgba(2, 17, 83, 1) 0%, rgba(163, 185, 251, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .txt-gradient-2 {
+            font-size: 72px;
+            background: linear-gradient(262deg, rgba(146, 229, 217, 1) 10%, rgba(2, 17, 83, 1) 0%, rgba(163, 185, 251, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-orange {
+            background: linear-gradient(162deg, rgba(146, 229, 217, 1) 0%, rgba(245, 140, 20, 1) 0%, rgba(251, 247, 163, 1) 100%);
+        }
+
+        .bg-red {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(163deg, rgba(146, 229, 217, 1) 0%, rgba(86, 33, 30, 1) 0%, rgba(237, 38, 38, 1) 100%);
+        }
+
+        .bg-green {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(163deg, rgba(146, 229, 217, 1) 0%, rgba(23, 69, 22, 1) 0%, rgba(38, 237, 98, 1) 100%);
+        }
+
+        .bg-purple {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(163deg, rgba(146, 229, 217, 1) 0%, rgba(61, 22, 69, 1) 0%, rgba(237, 38, 182, 1) 100%);
+        }
+
+        .bg-cyan {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(163deg, rgba(146, 229, 217, 1) 0%, rgba(14, 89, 77, 1) 0%, rgba(33, 223, 207, 1) 100%);
+        }
+    </style>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body class="bg h-full lg:h-screen font-oswald">
+    <div class="w-full mx-auto rounded-2xl my-6 px-20 overflow-hidden">
+        <h1 class="text-center text-3xl lg:text-6xl font-bold text-white">Welcome to <span
+                class="txt-gradient text-4xl lg:text-7xl">Mirpur
+                Bank!</span></h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
+            <div class="bg-orange px-6 py-8 rounded-xl">
+                <h3 class="text-white font-bold text-3xl">Deposit</h3>
+                <h2 class="text-white font-bold text-5xl">&#2547;00</h2>
+            </div>
+
+            <div class="bg-red px-6 py-8 rounded-xl">
+                <h3 class="text-white font-bold text-3xl">Withdraw</h3>
+                <h2 class="text-white font-bold text-5xl">&#2547;00</h2>
+            </div>
+
+            <div class="bg-green px-6 py-8 rounded-xl">
+                <h3 class="text-white font-bold text-3xl">Balance</h3>
+                <h2 class="text-white font-bold text-5xl">&#2547;00</h2>
+            </div>
+        </div>
+
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="bg-purple px-10 py-12  rounded-xl">
+                <span class="block text-white text-4xl font-bold mb-4">Deposit Amount:</span>
+                <input class="w-[80%] px-2 py-3 rounded-lg" type="number" placeholder="Enter Deposit Amount">
+                <button class="block mt-4 bg3 px-8 py-2 rounded-lg text-xl font-bold text-white">Deposit</button>
+            </div>
+
+            <div class="bg-cyan px-10 py-12 rounded-xl">
+                <span class="block text-white text-4xl font-bold mb-4">Deposit Amount:</span>
+                <input class="w-[80%] px-2 py-3 rounded-lg" type="number" placeholder="Enter Deposit Amount">
+                <button class="block mt-4 bg3 px-8 py-2 rounded-lg text-xl font-bold text-white">Deposit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

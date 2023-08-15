@@ -10,12 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         .bg {
             background: rgb(146, 229, 217);
             background: linear-gradient(37deg, rgba(146, 229, 217, 1) 0%, rgba(255, 233, 250, 1) 0%, rgba(114, 135, 246, 1) 100%);
@@ -52,14 +46,14 @@
     </style>
 </head>
 
-<body class="bg font-oswald">
-    <div class="flex justify-center items-center">
-        <div class="w-9/12 mx-auto bg2 rounded-2xl mt-10 py-10">
+<body class="bg font-oswald h-full lg:h-screen flex justify-center items-center">
+    <div class="">
+        <div class="w-2/3 lg:w-full mx-auto bg2 rounded-2xl my-10 py-10 px-20 overflow-hidden">
             <h1 class="text-center text-3xl lg:text-6xl font-bold text-white">Welcome to <span
                     class="txt-gradient text-4xl lg:text-7xl">Mirpur
                     Bank!</span></h1>
             <h2 class="text-center text-4xl font-bold text-white mt-4">Login</h2>
-            <div class="flex flex-col md:flex-row justify-evenly items-center">
+            <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex-1 pl-10 w-full">
                     <span class="block text- text-2xl font-bold txt-gradient mb-2">Email Address: </span>
                     <input class="w-[80%] px-2 py-3 rounded-lg mb-4" type="email"
@@ -71,7 +65,7 @@
                     <p class="text-sm txt-gradient">Password: aNiNda12345</p>
                 </div>
                 <div class="flex-1">
-                    <img class="w-[80%] pl-20" src="bank.png" alt="">
+                    <img class="w-[100%]" src="bank.png" alt="">
                 </div>
             </div>
         </div>
