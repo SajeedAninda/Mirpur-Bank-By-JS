@@ -73,7 +73,7 @@
     </style>
 </head>
 
-<body class="bg h-full lg:h-screen font-oswald">
+<body class="bg h-full lg:h-screen font-oswald flex justify-center items-center">
     <div class="w-full mx-auto rounded-2xl my-6 px-20 overflow-hidden">
         <h1 class="text-center text-3xl lg:text-6xl font-bold text-white">Welcome to <span
                 class="txt-gradient text-4xl lg:text-7xl">Mirpur
@@ -99,13 +99,13 @@
         <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
             <div class="bg-purple px-10 py-12  rounded-xl">
                 <span class="block text-white text-4xl font-bold mb-4">Deposit Amount:</span>
-                <input id="depositField" class="w-[80%] px-2 py-3 rounded-lg" type="number" placeholder="Enter Deposit Amount">
+                <input id="depositField" class="w-full md:w-[80%] px-2 py-3 rounded-lg" type="number" placeholder="Enter Deposit Amount">
                 <button id="depositBtn" class="block mt-4 bg3 px-8 py-2 rounded-lg text-xl font-bold text-white">Deposit</button>
             </div>
 
             <div class="bg-cyan px-10 py-12 rounded-xl">
                 <span class="block text-white text-4xl font-bold mb-4">Withdraw Amount:</span>
-                <input id="withdrawField" class="w-[80%] px-2 py-3 rounded-lg" type="number" placeholder="Enter Deposit Amount">
+                <input id="withdrawField" class="w-full md:w-[80%] px-2 py-3 rounded-lg" type="number" placeholder="Enter Deposit Amount">
                 <button id="withdrawBtn" class="block mt-4 bg3 px-8 py-2 rounded-lg text-xl font-bold text-white">Withdraw</button>
             </div>
         </div>
@@ -114,5 +114,4 @@
     <script src="deposit.js"></script>
     <script src="withdraw.js"></script>
 </body>
-
 </html>
