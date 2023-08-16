@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="bg-cyan-600 w-[700px] p-8 mx-auto flex flex-col justify-center items-center mt-32">
+        <h1 class="text-4xl text-red-600">Total Price: <span class="originalPrice">10000</span>taka</h1>
+        <input id="inputValue" class="px-4 py-3 rounded-lg w-9/12 mt-5 mb-2" type="text" placeholder="Enter Coupon For Discount" name=""
+            id="">
+        <p class="italic text-gray-300">Coupon Code: aNiNdA27</p>
+        <button id="btn" class="bg-yellow-600 px-5 py-2 rounded-xl text-white text-xl mt-4 mb-4">
+            Apply Coupon For 30% Discount
+        </button>
+        <h1 class="text-3xl font-semibold text-yellow-300">Please Pay: <span class="discount">10000</span>taka</h1>
+        <p class="wrongCoupon text-6xl font-bold text-red-600 mt-5"></p>
+    </div>
+
+    <script src="coupon.js"></script>
+</body>
+
+</html>
